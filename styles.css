@@ -1,11 +1,16 @@
 /* styles.css */
 
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
     line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -19,6 +24,7 @@ main {
     padding: 1rem;
     max-width: 800px;
     margin: 0 auto;
+    flex: 1;
 }
 
 h1, h2 {
@@ -59,9 +65,6 @@ footer {
     background-color: #333;
     color: white;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 a {
